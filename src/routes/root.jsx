@@ -70,10 +70,10 @@ const Home = () => {
 
   return (
     <div
-      className="w-full h-full lg:h-screen bg-cover bg-center bg-no-repeat  "
+      className="relative w-full h-full lg:h-screen bg-cover bg-center bg-no-repeat  "
       style={{ backgroundImage: `url(${HeroImage})` }}
     >
-      {/* <div class="custom-shape-divider-bottom-1732092401">
+      <div class="custom-shape-divider-bottom-1732092401">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ const Home = () => {
             class="shape-fill"
           ></path>
         </svg>
-      </div> */}
+      </div>
 
       {/* Navbar  */}
 
@@ -120,7 +120,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 pt-28 mx-20 cursor-pointer">
+      <div className="relative z-10  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 pt-28 mx-20 cursor-pointer">
         {isLoading
           ? Array(4)
               .fill(0)
